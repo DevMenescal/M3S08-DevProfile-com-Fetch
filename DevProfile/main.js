@@ -4,7 +4,7 @@ import './style.css'
 
 async function buscaNome() {
   try{
-    const response = await fetch("https://api.github.com/users/CarloGiacomoni");
+    const response = await fetch("https://api.github.com/users/menescal");
     const body = await response.json();
     console.log(body);
     document.querySelector("#nome").innerText = body.name;
